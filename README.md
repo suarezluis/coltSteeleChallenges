@@ -8,5 +8,6 @@ Colt Steele Youtube Challenges
 
 https://www.youtube.com/watch?v=qGwR_DSSnuQ
 
-Challenge response:
+### Challenge response:
+
 https://suarezluis.github.io/coltSteeleChallenges/1
