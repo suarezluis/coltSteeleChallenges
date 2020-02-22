@@ -91,7 +91,15 @@ document.getElementById("verify").addEventListener("input", element => {
   }
 });
 
+// Validate messenger
 document.getElementById("messenger").addEventListener("click", () => {
   validation[4] = true;
   console.log(validation);
+});
+
+// Disable tab button
+document.querySelector("html").addEventListener("keydown", function(e) {
+  if (e.which == 9) {
+    e.preventDefault();
+  }
 });
