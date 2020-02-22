@@ -65,6 +65,7 @@ document.getElementById("email").addEventListener("input", element => {
     emailValidationMessage.innerHTML = "Invalid email";
     validation[1] = false;
   }
+  validateAll();
 });
 
 // Validate password
@@ -77,6 +78,7 @@ document.getElementById("password").addEventListener("input", element => {
       "Password must have at least 8 characters";
     validation[2] = false;
   }
+  validateAll();
 });
 
 // Validate verify
@@ -89,12 +91,24 @@ document.getElementById("verify").addEventListener("input", element => {
     verifyValidationMessage.innerHTML = "4 digit code does not match";
     validation[3] = false;
   }
+  validateAll();
 });
+
+// Check for all validators
+
+let validateAll = () => {
+  let message = document.getElementById("allDone");
+  if (validation.includes(false)) {
+    message.innerHTML = "Please complete all steps";
+  } else {
+    message.innerHTML = "All steps completed, Thank you!";
+  }
+};
 
 // Validate messenger
 document.getElementById("messenger").addEventListener("click", () => {
   validation[4] = true;
-  console.log(validation);
+  validateAll();
 });
 
 // Disable tab button

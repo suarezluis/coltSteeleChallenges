@@ -49,6 +49,6 @@ img {
   height: 100px;
 }
 
-#allDone {
-  display: none;
+a {
+  text-decoration: none;
 }
