@@ -14,7 +14,7 @@ class Step {
   validate = () => {
     this.validated = true;
   };
-  unvalidate = () => {
+  invalidate = () => {
     this.validated = false;
   };
 }
