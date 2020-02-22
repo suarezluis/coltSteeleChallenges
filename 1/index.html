@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="step1" class="stepContainer">
+      <label for="" onclick="showStep(1)">Email</label>
+      <br />
+      <br />
+      <input type="email" name="email" id="email" />
+      <br />
+      <br />
+
+      <div id="continueToStep2" onclick="showStep(2)">Continue</div>
+    </div>
+
+    <div id="step2" class="stepContainer">
+      <label for="" onclick="showStep(2)">Password</label>
+      <br />
+      <br />
+      <input type="password" name="password" id="password" />
+      <br />
+      <br />
+      <div class="buttons">
+        <div class="button" id="backToStep1" onclick="showStep(1)">Back</div>
+        <div class="button" id="continueToStep3" onclick="showStep(3)">
+          Continue
+        </div>
+      </div>
+    </div>
+
+    <div id="step3" class="stepContainer">
+      <label for="" onclick="showStep(3)">Verify</label>
+      <br />
+      <label for="">Enter <span id="code"></span> in the following box</label>
+      <br />
+      <br />
+      <input type="text" name="verify" id="verify" />
+      <br />
+      <br />
+      <div class="buttons">
+        <div class="button" id="backToStep2" onclick="showStep(2)">Back</div>
+        <div class="button" id="continueToStep4" onclick="showStep(4)">
+          Continue
+        </div>
+      </div>
+    </div>
+
+    <div id="step4" class="stepContainer">
+      <label for="" onclick="showStep(4)">Shoot</label>
+      <p>The messenger</p>
+      <div id="clickableImages">
+        <img
+          id="messenger"
+          onclick="steps[4].closeStep()"
+          src="./assets/messenger.png"
+          alt=""
+        />
+        <img id="doctor" src="./assets/doctor.png" alt="" />
+      </div>
+      <div class="buttons">
+        <div class="button" id="backToStep3" onclick="showStep(3)">Back</div>
+      </div>
+      <br />
+    </div>
+
+    <p id="allDone">All Steps Completed, Thank You.</p>
+
+    <script src="index.js"></script>
+  </body>
+</html>

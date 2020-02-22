@@ -1,0 +1,44 @@
+* {
+  background-color: lightslategray;
+  text-align: center;
+}
+
+.stepContainer {
+  height: 20px;
+  overflow: hidden;
+  border: 2px solid black;
+  margin: 10px auto;
+  width: 450px;
+  transition: height 0.5s ease-out;
+}
+
+input {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+}
+
+#clickableImages {
+  cursor: crosshair;
+}
+
+img {
+  height: 100px;
+}
+
+#allDone {
+  display: none;
+}
