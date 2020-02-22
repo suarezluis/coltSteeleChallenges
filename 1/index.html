@@ -12,10 +12,12 @@
       <br />
       <br />
       <input type="email" name="email" id="email" />
-      <br />
-      <br />
 
-      <div id="continueToStep2" onclick="showStep(2)">Continue</div>
+      <p id="emailValidationMessage" class="validation"></p>
+
+      <div id="continueToStep2" class="button" onclick="showStep(2)">
+        Continue
+      </div>
     </div>
 
     <div id="step2" class="stepContainer">
@@ -23,8 +25,9 @@
       <br />
       <br />
       <input type="password" name="password" id="password" />
-      <br />
-      <br />
+
+      <p id="passwordValidationMessage" class="validation"></p>
+
       <div class="buttons">
         <div class="button" id="backToStep1" onclick="showStep(1)">Back</div>
         <div class="button" id="continueToStep3" onclick="showStep(3)">
@@ -37,11 +40,12 @@
       <label for="" onclick="showStep(3)">Verify</label>
       <br />
       <label for="">Enter <span id="code"></span> in the following box</label>
-      <br />
+
       <br />
       <input type="text" name="verify" id="verify" />
-      <br />
-      <br />
+
+      <p id="verifyValidationMessage" class="validation"></p>
+
       <div class="buttons">
         <div class="button" id="backToStep2" onclick="showStep(2)">Back</div>
         <div class="button" id="continueToStep4" onclick="showStep(4)">
@@ -65,11 +69,8 @@
       <div class="buttons">
         <div class="button" id="backToStep3" onclick="showStep(3)">Back</div>
       </div>
-      <br />
     </div>
-
     <p id="allDone">All Steps Completed, Thank You.</p>
-
     <script src="index.js"></script>
   </body>
 </html>

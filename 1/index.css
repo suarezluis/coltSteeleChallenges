@@ -22,13 +22,22 @@ input {
   box-sizing: border-box;
 }
 
+.validation {
+  color: #a92539;
+  min-height: 20px;
+}
+
 .buttons {
   width: 100%;
 }
 
 .button {
   display: inline-block;
-  width: 200px;
+  width: 180px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 #clickableImages {
