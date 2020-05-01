@@ -13,3 +13,5 @@ https://www.youtube.com/watch?v=qGwR_DSSnuQ
 https://suarezluis.github.io/coltSteeleChallenges/1
 
 ## Challenge 2
+
+Still waiting for it....
